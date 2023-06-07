@@ -1,0 +1,57 @@
+/*estilo geral de todo o corpo do formulario*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 76.51% -6.86%, #ff73a6 0, #ff63aa 16.67%, #ff49a9 33.33%, #f31da3 50%, #d4009e 66.67%, #b8009f 83.33%, #9f00a5 100%);
+}  
+/*centralizando o h1 formulario*/
+h1 {
+    text-align: center;
+    color: #333;
+}
+/*estilização da div container margin tamnho maximo e cor de fundo*/
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+/*estilo dos inputs estilo das bordas margim entra elas largura formato*/
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/*estilo do botão cor de fundo largura margim para cima cor das letras formato e estilo da borda e a animação do cursor do mouse*/
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*estilo da animação do botão*/
+button:hover {
+    background-color: #555;
+}
+/*estilo de mensagem de erro ou acerto*/
+p#mensagem {
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
