@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1>EBAC News</h1>
+        <form action="">
+            <input type="search" placeholder="Busque no Site">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </div>
+    <div class="botao-menu">
+        <button type="button">Abrir menu</button>
+    </div>
+    <nav class="container">
+        <ul class="menu">
+            <li>
+                Esportes
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Futebol</a>
+                    </li>
+                    <li>
+                        <a href="#">Basquete</a>
+                    </li>
+                    <li>
+                        <a href="#">Formula 1</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Economia
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Bousa de Valores</a>
+                    </li>
+                    <li>
+                        <a href="#">Inposto de Renda</a>
+                    </li>
+                    <li>
+                        <a href="#">Finansas Pessoais</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="claer-left"></div>
+</header>
+<div class="container conteudo">
+    <main>
+    <section class="destaqui">
+        <h2>Em destaque</h2>
+        <article class="noticia">
+            <a href="#">
+                <img src="http://via.placeholder.com/320x320" />
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                </h3>
+            </a>
+        </article>
+    </section>
+    <section>
+        <h2>Últimas noticias</h2>
+        <div class="noticias">
+            <article class="noticia">
+                <a href="#">
+                    <img src="http://via.placeholder.com/320x320" />
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                    </h3>
+                </a>
+            </article>
+            <article class="noticia">
+                <a href="#">
+                    <img src="http://via.placeholder.com/320x320" />
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                    </h3>
+                </a>
+            </article>
+            <article class="noticia">
+                <a href="#">
+                    <img src="http://via.placeholder.com/320x320" />
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                    </h3>
+                </a>
+            </article><article class="noticia">
+                <a href="#">
+                    <img src="http://via.placeholder.com/320x320" />
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                    </h3>
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+<aside>
+    <section class="novidades">
+        <h2>Novidades</h2>
+        <article class="noticia">
+            <a href="#">
+                <img src="http://via.placeholder.com/320x320" />
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                </h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="#">
+                <img src="http://via.placeholder.com/320x320" />
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                </h3>
+            </a>
+        </article>
+        <article class="noticia">
+            <a href="#">
+                <img src="http://via.placeholder.com/320x320" />
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse soluta rem, nostrum nobis beatae pariatur ipsam hic perspiciatis atque culpa
+                </h3>
+            </a>
+        </article>
+    </section>
+</aside>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('.botao-menu button').click(function(){
+            $('.menu').slideToggle();
+        })
+    })
+</script>
+</body>
+</html>
