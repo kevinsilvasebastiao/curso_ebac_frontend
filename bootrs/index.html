@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lb/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <style>
+        #imgGrande{          
+            height: 681px;
+        }
+
+        #grid{
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/541152916/pt/foto/healthy-green-trees-in-forest-of-spruce-fir-and-pine.jpg?s=1024x1024&w=is&k=20&c=O80cnVrvJVvIJMng85QSFATNzbNRLHRugYDc85kkbrM=" alt="">
+                    <div class="carousel-caption">
+                        <h2>foto 1</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1337232523/pt/foto/high-angle-view-of-a-lake-and-forest.jpg?s=1024x1024&w=is&k=20&c=6F72n4BfjkNF3IxEKdEvNhPGHkfDwo1qjNtRuvJcBu4=" alt="">
+                    <div class="carousel-caption">
+                        <h2>foto 2</h2>
+                    </div>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item" >
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/27/14/49/milky-way-8153503_1280.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>foto 3</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide-to="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide-to="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<div class="container" id="grid">
+    <div class="row">
+        <!-- Primeira coluna (desktop: 3 itens, tablet: 2 itens, mobile: 1 item) -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <article class="card">
+                <header class="card-header">
+                    Desenvolvimento Web
+                </header>
+                <img src="https://via.placeholder.com/100x100" alt="Imagem 1" />
+                <div class="card-body">
+                    <h4 class="card-title">Cardes do Bootstrap</h4>
+                    <p class="card-text">
+                        Conheça os cards do Bootstrap e suas variações.
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+                <footer class="card-footer">
+                    Postado em <time>10/08/2023 às 19:00:00</time>
+                </footer>
+            </article>
+        </div>
+
+        <!-- Segunda coluna (desktop: 3 itens, tablet: 2 itens, mobile: 1 item) -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-dark">
+                <img src="https://via.placeholder.com/100x100" alt="Imagem 2" />
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis nostrum quis, ad doloremque dolorum eveniet fuga delectus.
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terceira coluna (desktop: 3 itens, tablet: 2 itens, mobile: 1 item) -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-dark">
+                <div class="card-header">
+                    Cabeçalho do Header
+                </div>
+                <img src="https://via.placeholder.com/100x100" alt="Imagem 3" />
+                <div class="card-body">
+                    <h4 class="card-title">Título do Card</h4>
+                    <h5 class="card-subtitle">Subtítulo</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis nostrum quis, ad doloremque dolorum eveniet fuga delectus, accusantium veritatis ratione error, harum illo aliquam quos ipsam. Saepe, possimus itaque!
+                    </p>
+                    <a href="#" class="btn btn-primary">Botão link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./lb/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
