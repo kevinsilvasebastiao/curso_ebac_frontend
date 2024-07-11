@@ -1,4 +1,4 @@
-import styles from './Vaga.module.css'
+import styles from './Vaga.tsx'
 
 type Props = {
   titulo: string
@@ -9,6 +9,7 @@ type Props = {
   salarioMax: number
   requisitos: string[]
 }
+
 
 const Vaga = (props: Props) => (
   <li className={styles.vaga}>

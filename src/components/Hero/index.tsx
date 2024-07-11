@@ -1,4 +1,4 @@
-import styles from './Hero.module.css'
+import styles from './Hero.tsx'
 
 const Hero = () => (
   <form className={styles.form}>

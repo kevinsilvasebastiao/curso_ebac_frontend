@@ -3,7 +3,7 @@ import FormVagas from '../../components/FormVagas'
 
 import Vaga from '../../components/Vaga'
 
-import styles from './ListaVagas.module.css'
+import styles from './ListaVagas.module.tsx'
 
 type Vaga = {
   id: string

@@ -1,4 +1,4 @@
-import styles from './Cabecalho.module.css'
+import styles from './Cabecalho.tsx'
 
 const Cabecalho = () => (
   <header className={styles.cabecalho}>
