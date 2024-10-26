@@ -37,24 +37,26 @@ describe('Teste de Alteração de Contato', () => {
 
 
 
-        describe('Teste de Remoção de Contato', () => {
-            before(() => {
-                cy.visit('https://agenda-contatos-react.vercel.app/');
-            });
-        
-            it('Deve remover um contato existente', () => {
-                const contatoParaRemover = 'João Silva';
-                cy.contains(contatoParaRemover, { timeout: 10000 }).should('exist');
-                cy.contains('João Silva')
-                    .closest('li')
-                    .find('button.delete')
-                    .should('be.visible')
-                    .click();
-                cy.contains(contatoParaRemover).should('not.exist');
-            });
+    describe('Teste de Remoção de Contato', () => {
+        before(() => {
+            cy.visit('https://agenda-contatos-react.vercel.app/');
         });
-        
 
-        
-        
+        it('Deve remover um contato existente', () => {
+            const contatoParaRemover = 'João Silva';
+            
+            // Verifique se o contato existe
+            cy.contains(contatoParaRemover, { timeout: 10000 }).should('exist');
+
+            // Clique no botão de deletar
+                cy.get('#root > div > div > div:nth-child(2) > div.sc-gueYoa.jWEbWB > button.delete')
+                .should('exist')
+                .should('be.visible')
+                .click();
+
+            // Aguarde a atualização e verifique se o contato não existe mais
+            cy.contains(contatoParaRemover, { timeout: 10000 }).should('not.exist');
+        });
+    });
+
 });
